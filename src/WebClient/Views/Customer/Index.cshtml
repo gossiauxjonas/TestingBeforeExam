@@ -1,0 +1,14 @@
+﻿@model ICollection<LesVoorbeeldClient.ViewModels.CustomerSpecial>
+@using LesVoorbeeldClient.ViewModels
+
+<table>
+    @foreach (CustomerSpecial cust in Model)
+    {
+        <tr>
+            <td>
+                @cust.Naam - @cust.Land
+            </td>
+        </tr>
+    }
+</table>
+
